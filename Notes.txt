@@ -1,0 +1,23 @@
+
+
+Ratingside for burgere (i mitt område?)
+	
+	must haves
+burger profiler
+	kalorier
+	pris
+	rating
+	sted
+
+profilside
+	ratingmulighet
+	favoritter
+	venneliste?
+
+sorteringssystem
+	etter pris, kalorier, rating
+	filter, billig, kort ventetid, kalorier, sted
+	KPK?
+
+søkemulighet
+	kunne søke etter ulike kategorier.
