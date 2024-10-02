@@ -1,8 +1,8 @@
 const model = {
     app: {
         loggedInUserID: null,
-        pages: ["mainPage", "profilePage", "burgerPage", "loginPage"],
-        currentPage: "mainPage",
+        pages: ['mainPage', 'profilePage', 'burgerPage', 'loginPage'],
+        currentPage: 'mainPage',
 
     },
 

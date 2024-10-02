@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borgir</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="JS/model.js"></script>
+    <script src="JS/maincontroller.js"></script>
+    <script src="JS/mainview.js"></script>
+    <script src="JS/profilecontroller.js"></script>
+    <script src="JS/profileview.js"></script>
+    <script src="JS/burgercontroller.js"></script>
+    <script src="JS/burgerview.js"></script>
+    <script src="JS/logincontroller.js"></script>
+    <script src="JS/loginview.js"></script>
 </head>
 <body>
     <div id="app"></div>
 </body>
+
+<script>
+    updateview()
+    function updateview(){
+        const page = model.app.currentPage;
+        if(page === "mainPage")updateViewMain();
+        else if(page === "profilePage")updateViewProfile();
+        else if(page === "burgerPage")updateViewBurger();
+        else if(page === "loginPage")updateViewLogin();
+
+    }
+    
+</script>
 
 
 </html>

@@ -1,0 +1,21 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr  4fr;
+    grid-template-areas:    'profileBar     searchBar'
+                            'profileBar     BurgerGrid' ;
+
+}
+
+.profileBar{
+    grid-area: profileBar;
+}
+
+.searchBar{
+    border: solid black 1px;
+}
+
+.burgerGrid{
+    grid-area: BurgerGrid;
+    display: grid;
+    grid-template-columns: auto auto;
+}
