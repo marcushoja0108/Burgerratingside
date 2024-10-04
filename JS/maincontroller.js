@@ -7,3 +7,8 @@ function createAverageRating(i){
     let averageRating = totalratings/allratings.length
     return averageRating
 }
+
+function openinfo(i){
+    updateViewBurger(i)
+    model.app.currentPage = 'burgerPage'
+}

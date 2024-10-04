@@ -5,6 +5,7 @@ body{
     margin: 0;
     height: 100vh;
     width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
     display: grid;
@@ -44,7 +45,6 @@ body{
     height: 100vh;
     width: 250px;
     grid-template-areas:    'barProfilepic'
-                            'barDescription'
                             'barRatings'
                             'barActivity';
     grid-template-rows:     1fr
@@ -66,10 +66,7 @@ body{
     border: solid 1px beige;
     border-radius: 45%;
 }
-.barDescription{
-    grid-area: barDescription;
-    border-bottom: solid beige;
-}
+
 .barRatings{
     grid-area: barRatings;
     
@@ -89,16 +86,58 @@ body{
 .burgercontainer{
     border: solid   beige;
     border-radius: 10%;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     height: 250px;
+    width: 500px;
+    display: grid;
+    grid-template-areas:    'mainburgertitle   mainburgertitle'
+                            'mainBurgerimg     averageRating'
+                            'mainBurgerimg     mainPrice'
+                            'mainBurgerimg     infobutton';
+                            user-select: none;
+}
+.mainburgertitle{
+    grid-area: mainburgertitle;
+    font-size:x-large;
 }
 .mainBurgerimg{
     height: 200px;
     border-radius: 5%;
     border: solid black;
+    grid-area: mainBurgerimg;
     
 }
 .averageRating{
     color: yellow;
+    grid-area: averageRating;
+}
+.mainPrice{
+    grid-area: mainPrice;
+}
+.infobutton{
+    background-color: red;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    grid-area: infobutton;
+    cursor: pointer;
+    border-radius: 15%;
+}
+.infobutton:hover{
+    background-color: rgb(255, 90, 90);
+    font-weight: bold;
+}
+
+
+
+.burgerProfileContainer{
+    display: grid;
+}
+.burgerProfileHeader{
+    font-size: xx-large;
+}
+.burgerProfileImage{
+    border-radius: 15%;
+    height: 500px;
 }
