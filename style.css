@@ -1,21 +1,99 @@
+body{
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr  4fr;
-    grid-template-areas:    'profileBar     searchBar'
+    grid-template-areas:    'profileBar     homebutton'
+                            'profileBar     searchBar'
                             'profileBar     BurgerGrid' ;
+    gap: 10px;
+    
+}
 
+.homebuttoncontainer{
+    grid-area: homebutton;
+    text-align: end;
+    margin: 10px;
+}
+.homebutton{
+    margin: 3px;
+    width: 50px;
+    border: solid beige;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.searchBar{
+    border: solid   beige;
+    height: 30px;
+    padding: 3px;
 }
 
 .profileBar{
     grid-area: profileBar;
+    border-right: solid   beige;
+    padding: 10px;
+    height: 100%;
+    grid-template-areas:    'barProfilepic'
+                            'barDescription'
+                            'barRatings'
+                            'barActivity';
+    grid-template-rows:     1fr
+                            1fr
+                            1fr
+                            1fr;
 }
+.barElementHeader{
+    border-bottom: solid beige;
+}
+.user{
+    display: grid;
+    grid-template-columns:  auto    auto;
+}
+.barProfilepic{
+    grid-area: barProfilepic;
+    height: 120px;
+    border: solid 1px beige;
+    border-radius: 45%;
+}
+.barDescription{
+    grid-area: barDescription;
+    border-bottom: solid beige;
+}
+.barRatings{
+    grid-area: barRatings;
+    
 
-.searchBar{
-    border: solid black 1px;
+}
+.barActivity{
+    grid-area: barActivity;
+   
 }
 
 .burgerGrid{
     grid-area: BurgerGrid;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:  auto    auto;
+    gap: 10px;
+}
+.burgercontainer{
+    border: solid   beige;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+}
+.mainBurgerimg{
+    height: 200px;
+    border-radius: 5%;
+    border: solid black;
+    
+}
+.averageRating{
+    color: yellow;
 }

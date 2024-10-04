@@ -74,7 +74,7 @@ const model = {
             {
                 id: 101,
                 burgername: "Dirty burger",
-                burgerImage: "DirtyBurger.png",
+                burgerImage: "img/DirtyBurger.png",
                 burgerratings: [9, 6, 10, 8],
                 calories: 879,
                 price: 189,
@@ -84,12 +84,30 @@ const model = {
             {
                 id: 102,
                 burgername: "Dobbel Explosion",
-                burgerImage:"DobbelExplosion.png",
+                burgerImage:"img/DobbelExplosion.png",
                 burgerratings: [7, 6, 9, 5],
                 calories: 624,
                 price: 215,
                 description: "2x Storfe, bacon, Parmesan, syltet rødløk, chilimayo",
-            }
+            },
+            {
+                id: 102,
+                burgername: "Dobbel Explosion",
+                burgerImage:"img/DobbelExplosion.png",
+                burgerratings: [7, 6, 9, 5],
+                calories: 624,
+                price: 215,
+                description: "2x Storfe, bacon, Parmesan, syltet rødløk, chilimayo",
+            },
+            {
+                id: 102,
+                burgername: "Dobbel Explosion",
+                burgerImage:"img/DobbelExplosion.png",
+                burgerratings: [7, 6, 9, 5],
+                calories: 624,
+                price: 215,
+                description: "2x Storfe, bacon, Parmesan, syltet rødløk, chilimayo",
+            },
         ]
 
     }
