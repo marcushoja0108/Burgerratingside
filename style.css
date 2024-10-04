@@ -3,12 +3,14 @@ body{
     color: white;
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 .container{
     display: grid;
     grid-template-columns: 1fr  4fr;
+    grid-template-rows:     80px
+                            150px;
     grid-template-areas:    'profileBar     homebutton'
                             'profileBar     searchBar'
                             'profileBar     BurgerGrid' ;
@@ -39,7 +41,8 @@ body{
     grid-area: profileBar;
     border-right: solid   beige;
     padding: 10px;
-    height: 100%;
+    height: 100vh;
+    width: 250px;
     grid-template-areas:    'barProfilepic'
                             'barDescription'
                             'barRatings'
@@ -48,6 +51,7 @@ body{
                             1fr
                             1fr
                             1fr;
+    background-color: rgb(31, 31, 31)
 }
 .barElementHeader{
     border-bottom: solid beige;
@@ -87,6 +91,7 @@ body{
     border-radius: 10%;
     padding: 10px;
     margin: 10px;
+    height: 250px;
 }
 .mainBurgerimg{
     height: 200px;
