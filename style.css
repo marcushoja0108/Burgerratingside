@@ -3,7 +3,7 @@ body{
     color: white;
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -13,9 +13,10 @@ body{
     grid-template-rows:     80px
                             150px;
     grid-template-areas:    'profileBar     homebutton'
-                            'profileBar     searchBar'
-                            'profileBar     BurgerGrid' ;
-    gap: 10px;
+                            'profileBar     Maincontent'
+                            'profileBar     Maincontent' ;
+    gap: 15px;
+    height: 100vh;
     
 }
 
@@ -26,7 +27,7 @@ body{
 }
 .homebutton{
     margin: 3px;
-    width: 50px;
+    width: 70px;
     border: solid beige;
     cursor: pointer;
     border-radius: 20%;
@@ -36,13 +37,14 @@ body{
     border: solid   beige;
     height: 30px;
     padding: 3px;
+    grid-area: searchbar;
 }
 
 .profileBar{
     grid-area: profileBar;
     border-right: solid   beige;
     padding: 10px;
-    height: 100vh;
+    height: 100%;
     width: 250px;
     grid-template-areas:    'barProfilepic'
                             'barRatings'
@@ -64,7 +66,7 @@ body{
     grid-area: barProfilepic;
     height: 120px;
     border: solid 1px beige;
-    border-radius: 45%;
+    border-radius: 50%;
 }
 
 .barRatings{
@@ -77,6 +79,14 @@ body{
    
 }
 
+.maincontent{
+    grid-area: Maincontent;
+    display: grid;
+    grid-template-rows: 1fr
+                        5fr;
+    grid-template-areas:    'searchbar'
+                            'BurgerGrid';
+}
 .burgerGrid{
     grid-area: BurgerGrid;
     display: grid;
@@ -85,7 +95,7 @@ body{
 }
 .burgercontainer{
     border: solid   beige;
-    border-radius: 10%;
+    border-radius: 40px;
     padding: 20px;
     margin: 10px;
     height: 250px;

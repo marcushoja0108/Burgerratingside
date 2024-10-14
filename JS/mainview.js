@@ -2,13 +2,15 @@ function updateViewMain(){
     document.getElementById('app').innerHTML = /*HTML*/`
     <div class="container">
         ${createcommon()}
-        <div class="searchBar">
-        <button>sorter etter</button>
-        Søk
-        <input type="text">
-        </div>
-        <div class="burgerGrid">
-        ${createBurgergrid()}
+        <div class="Maincontent">
+            <div class="searchBar">
+            <button>sorter etter</button>
+            Søk
+            <input type="text">
+            </div>
+            <div class="burgerGrid">
+            ${createBurgergrid()}
+            </div>
         </div>
     </div>
     `;
