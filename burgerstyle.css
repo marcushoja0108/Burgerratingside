@@ -1,0 +1,12 @@
+.burgerProfileContainer{
+    display: grid;
+}
+.burgerProfileHeader{
+    font-size: xx-large;
+}
+.burgerProfileImage{
+    border-radius: 60px;
+    height: 500px;
+    padding: 5px;
+    background-color: beige;
+}

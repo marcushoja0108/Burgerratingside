@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr  5fr;
+    grid-template-rows:     80px
+                            150px;
+    grid-template-areas:    'profileBar     homebutton'
+                            'profileBar     Maincontent'
+                            'profileBar     Maincontent' ;
+    gap: 15px;
+    height: 100vh;
+    
+}
+
+.homebuttoncontainer{
+    grid-area: homebutton;
+    text-align: end;
+    margin: 10px;
+}
+.homebutton{
+    margin: 3px;
+    width: 70px;
+    border: solid beige;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.profileBar{
+    grid-area: profileBar;
+    border-right: solid   beige;
+    padding: 10px;
+    height: 100%;
+    grid-template-areas:    'barProfilepic'
+                            'barRatings'
+                            'barActivity';
+    grid-template-rows:     1fr
+                            1fr
+                            1fr
+                            1fr;
+    background-color: rgb(31, 31, 31);
+    background-image: linear-gradient(rgb(31, 31, 31), black);
+}
+.barElementHeader{
+    border-bottom: solid beige;
+}
+.user{
+    display: grid;
+    grid-template-columns:  auto    auto;
+}
+.barProfilepic{
+    grid-area: barProfilepic;
+    height: 120px;
+    border: solid 1px beige;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.goToProfile{
+    cursor: pointer;
+}
+
+.barRatings{
+    grid-area: barRatings;
+    
+
+}
+.barActivity{
+    grid-area: barActivity;
+   
+}

@@ -1,0 +1,79 @@
+
+
+.searchBar{
+    border-bottom: solid beige 2px;
+    height: 30px;
+    padding: 3px;
+    grid-area: searchbar;
+}
+
+
+.maincontent{
+    grid-area: Maincontent;
+    display: grid;
+    grid-template-rows: 1fr
+                        5fr;
+    grid-template-areas:    'searchbar'
+                            'BurgerGrid';
+}
+.burgerGrid{
+    grid-area: BurgerGrid;
+    display: grid;
+    grid-template-columns:  auto    auto;
+    justify-content: center;
+    gap: 5vh;
+}
+.burgercontainer{
+    border: solid   beige;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    height: 250px;
+    width: 500px;
+    display: grid;
+    grid-template-areas:    'mainburgertitle   mainburgertitle'
+                            'mainBurgerimg     averageRating'
+                            'mainBurgerimg     mainPrice'
+                            'mainBurgerimg     infobutton';
+                            user-select: none;
+}
+.mainburgertitle{
+    grid-area: mainburgertitle;
+    font-size:x-large;
+}
+.mainBurgerimg{
+    height: 200px;
+    border-radius: 5%;
+    border: solid black;
+    grid-area: mainBurgerimg;
+    
+}
+.averageRating{
+    color: yellow;
+    grid-area: averageRating;
+}
+.mainPrice{
+    grid-area: mainPrice;
+}
+.infobutton{
+    background-color: red;
+    background-image: radial-gradient(red, rgb(255, 87, 87));
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: infobutton;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.infobutton:hover{
+    background-color: rgb(255, 90, 90);
+    background-image: none;
+    font-weight: bold;
+    width: 85px;
+    height: 35px;
+}
+
+
+

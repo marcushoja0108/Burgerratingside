@@ -9,7 +9,7 @@ function createcommon(){
 function createHomeButton(){
     let html = /*HTML*/`
     <div class="homebuttoncontainer">
-        <img onclick="model.app.currentPage = 'mainPage'; updateview()"
+        <img onclick="goMain()"
         class="homebutton" 
         src="img/homebutton.png">
     </div>
@@ -22,8 +22,10 @@ function createProfileBar(){
     let html = /*HTML*/`
     <div class="profileBar">
     
-        <img class="barProfilepic"src="users/borgirman.png">
-        <h3 class="barElementHeader">Min profil</h3>
+        <img class="barProfilepic"src="users/borgirman.png"
+        onclick="goProfile()">
+        <h3 class="barElementHeader" onclick="goProfile()" 
+        class="goToProfile">Min profil</h3>
     <div class="barRatings">
         <h4 class="barElementHeader">Topp ratings</h4>
         <div class="barRatingsMain"></div>

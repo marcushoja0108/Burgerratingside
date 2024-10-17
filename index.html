@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borgir</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mainstyle.css"/>
+    <link rel="stylesheet" href="loginstyle.css"/>
+    <link rel="stylesheet" href="commonstyle.css"/>
+    <link rel="stylesheet" href="burgerstyle.css"/>
+    <link rel="stylesheet" href="profilestyle.css"/>
     <script src="JS/model.js"></script>
     <script src="JS/maincontroller.js"></script>
     <script src="JS/mainview.js"></script>
@@ -22,11 +26,11 @@
 
 <script>
     updateview()
-    function updateview(){
+    function updateview(i){
         const page = model.app.currentPage;
         if(page === "mainPage")updateViewMain();
         else if(page === "profilePage")updateViewProfile();
-        else if(page === "burgerPage")updateViewBurger();
+        else if(page === "burgerPage")updateViewBurger(i);
         else if(page === "loginPage")updateViewLogin();
 
     }

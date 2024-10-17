@@ -1,3 +1,8 @@
+function goMain(){
+    model.app.currentPage = model.app.pages[0];
+    updateview()
+}
+
 function createAverageRating(i){
     let totalratings = 0
     let allratings = model.data.Burgers[i].burgerratings
@@ -6,9 +11,4 @@ function createAverageRating(i){
     }
     let averageRating = totalratings/allratings.length
     return averageRating
-}
-
-function openinfo(i){
-    updateViewBurger(i)
-    model.app.currentPage = 'burgerPage'
 }

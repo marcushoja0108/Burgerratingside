@@ -30,7 +30,7 @@ function createBurgergrid(){
             Average rating: ${createAverageRating(i)}</div>
             <div class="mainPrice">Price: ${burger[i].price} kr</div>
             <img class="mainBurgerimg" src= ${burger[i].burgerImage}>
-            <div class="infobutton" onclick="openinfo(${i})">More info</div>
+            <div class="infobutton" onclick="goInfo(${i})">More info</div>
 
         </div>
         `;

@@ -1,0 +1,39 @@
+.loginLogo{
+    max-width: 20%;
+    border-radius: 90px;
+    padding: 4px;
+    background-color: rgb(255, 187, 0);
+    margin: 2%;
+}
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+    font-size: larger;
+}
+.logInInput{
+    margin-top: 1%;
+}
+
+.createUserButton{
+    margin-top: 1%;
+    user-select: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+.createUserButton:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.logInButton{
+    margin-top: 1%;
+    user-select: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+.logInButton:hover{
+    background-color: red;
+    cursor: pointer;
+}

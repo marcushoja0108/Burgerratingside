@@ -2,7 +2,7 @@ const model = {
     app: {
         loggedInUserID: null,
         pages: ['mainPage', 'profilePage', 'burgerPage', 'loginPage'],
-        currentPage: 'mainPage',
+        currentPage: 'loginPage',
 
     },
 
@@ -15,7 +15,7 @@ const model = {
 
         createAccount: {
             name: null,
-            adress: null,
+            address: null,
             email: null,
             password: null,
             secondPassword: null,
@@ -37,8 +37,10 @@ const model = {
             {
                 id: 1,
                 name: "Marcus",
+                email: "marcus@mail.com",
+                password: "1111",
                 description: "Jeg liker borgir. Bacon and cheese in my veins.",
-                resident: "stavanger",
+                address: "stavanger",
                 calories: 100,
                 favoriteBurgertype: "baconcheese",
                 profileimage:"borgirman.png",
@@ -53,8 +55,10 @@ const model = {
             {
                 id: 2,
                 name: "Lotte",
+                email: "lotte@mail.com",
+                password: "bamse",
                 description: "Namnam",
-                resident: "stavanger",
+                address: "stavanger",
                 calories: 0,
                 favoriteBurgertype: "triple cheese",
                 profileimage: "lotte.png",
