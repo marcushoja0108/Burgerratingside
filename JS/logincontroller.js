@@ -17,8 +17,19 @@ function logIn(){
 
 function registerUser(){
     let createAccount = model.input.createAccount;
-    if(createAccount.name != null || createAccount.email != null|| 
-        createAccount.password != null|| createAccount.address != null){
+    if(createAccount.name == null || createAccount.email == null|| 
+        createAccount.password == null|| createAccount.address == null){
+            createUserMessage = 'Input a value';
+            createNewUserView();
+            return
+    }
+    for(i = 0; i < model.data.users.length; i ++){
+        if(createAccount.email == model.data.users[i].email){
+            createUserMessage = 'That email is already in use'
+            createNewUserView()
+            return
+        }
+    }
         let newUser = {
             name: createAccount.name,
             email: createAccount.email,
@@ -28,11 +39,7 @@ function registerUser(){
         }
         model.data.users.push(newUser);
         updateViewLogin()
-    }
-    else{
-        createUserMessage = 'Input a value';
-        createNewUserView();
-    }
+    
 }
 
 
