@@ -14,6 +14,7 @@ const model = {
         },
 
         createAccount: {
+            newUserID: null,
             name: null,
             address: null,
             email: null,

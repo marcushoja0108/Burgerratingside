@@ -16,6 +16,10 @@
 .logInInput{
     margin-top: 1%;
 }
+.loginResults{
+    color: red;
+    font-size: large;
+}
 
 .createUserButton{
     margin-top: 1%;
