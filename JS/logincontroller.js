@@ -5,14 +5,14 @@ function goLogin(){
 
 function logIn(){
     let user = getUserEmail(model.input.login.email)
-if(!model.data.users.includes(user)){
-    loginResultMessage = 'User not found';
-    updateViewLogin();
-}
-else{
     if(!user || !model.input.login.password){
     loginResultMessage = 'Fill in the required fields';
     updateViewLogin();
+}
+else{
+    if(!model.data.users.includes(user)){
+        loginResultMessage = 'User not found';
+        updateViewLogin();
     }
     else{
         if(user.password == model.input.login.password){
