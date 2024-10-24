@@ -58,6 +58,7 @@ if(createAccount.password === createAccount.secondPassword){
             friendslist: [],
         }
         model.data.users.push(newUser);
+        resetInputs();
         updateViewLogin();
     }
     else{
@@ -70,4 +71,15 @@ if(createAccount.password === createAccount.secondPassword){
 
 function getUserEmail(email){
    return model.data.users.find(user => user.email == email);
+}
+
+function resetInputs(){
+    let createAccount = model.input.createAccount;
+
+    createAccount.name = null;
+    createAccount.email = null;
+    createAccount.address = null;
+    createAccount.password = null;
+    createAccount.secondPassword = null;
+    
 }
