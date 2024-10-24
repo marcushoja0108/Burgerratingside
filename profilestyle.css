@@ -1,0 +1,28 @@
+.profileHeaderContainer{
+    border: beige solid;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vh;
+}
+.profileImage{
+    max-width: 20vh;
+    border-radius: 50%;
+    border: solid beige 4px;
+    background-color: black;
+}
+.profileHeaderDetails{
+    justify-content: center;
+}
+.profileHeaderName{
+    font-size: xx-large;
+}
+.profileCalorieCount{
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgb(253, 69, 69);
+}

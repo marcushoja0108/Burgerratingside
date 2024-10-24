@@ -57,7 +57,7 @@ body{
 .barProfilepic{
     grid-area: barProfilepic;
     height: 120px;
-    border: solid 1px beige;
+    border: solid 3px beige;
     border-radius: 50%;
     cursor: pointer;
 }

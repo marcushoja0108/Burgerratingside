@@ -5,41 +5,66 @@ function goLogin(){
 
 function logIn(){
     let user = getUserEmail(model.input.login.email)
+if(!model.data.users.includes(user)){
+    loginResultMessage = 'User not found';
+    updateViewLogin();
+}
+else{
+    if(!user || !model.input.login.password){
+    loginResultMessage = 'Fill in the required fields';
+    updateViewLogin();
+    }
+    else{
         if(user.password == model.input.login.password){
-            loggedInUserID = user.id;
+            model.app.loggedInUserID = user.id;
             goMain();
         }
         else{
             loginResultMessage = 'Wrong Password';
-            updateViewLogin()
+            updateViewLogin();
         }
+    }
+    }
 }
 
 function registerUser(){
     let createAccount = model.input.createAccount;
     if(createAccount.name == null || createAccount.email == null|| 
         createAccount.password == null|| createAccount.address == null){
-            createUserMessage = 'Input a value';
+            createUserMessage = 'Fill in all the fields';
             createNewUserView();
             return
     }
     for(i = 0; i < model.data.users.length; i ++){
         if(createAccount.email == model.data.users[i].email){
             createUserMessage = 'That email is already in use'
-            createNewUserView()
+            createNewUserView();
             return
         }
     }
+if(createAccount.password === createAccount.secondPassword){
         let newUser = {
+            id: model.data.users.length,
             name: createAccount.name,
             email: createAccount.email,
             password: createAccount.password,
+            description: '',
             address: createAccount.address,
-        
+            calories: 0,
+            favoriteBurgertype: '',
+            profileimage: null,
+            ratedBurgers: [],
+            favoriteBurgers: [],
+            friendslist: [],
         }
         model.data.users.push(newUser);
-        updateViewLogin()
-    
+        updateViewLogin();
+    }
+    else{
+        createUserMessage = 'password does not match';
+        createNewUserView();
+        return
+    }
 }
 
 

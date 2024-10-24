@@ -18,11 +18,12 @@ function createHomeButton(){
 return html
 }
 
-function createProfileBar(){    
+function createProfileBar(){
+    let loggedInUser = model.data.users[model.app.loggedInUserID]
     let html = /*HTML*/`
     <div class="profileBar">
     
-        <img class="barProfilepic"src="users/borgirman.png"
+        <img class="barProfilepic"src="${loggedInUser.profileimage}"
         onclick="goProfile()">
         <h3 class="barElementHeader" onclick="goProfile()" 
         class="goToProfile">Min profil</h3>

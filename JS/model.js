@@ -1,8 +1,8 @@
 const model = {
     app: {
-        loggedInUserID: null,
+        loggedInUserID: 0,
         pages: ['mainPage', 'profilePage', 'burgerPage', 'loginPage'],
-        currentPage: 'loginPage',
+        currentPage: 'profilePage',
 
     },
 
@@ -36,7 +36,7 @@ const model = {
     data: {
         users: [
             {
-                id: 1,
+                id: 0,
                 name: "Marcus",
                 email: "marcus@mail.com",
                 password: "1111",
@@ -44,17 +44,17 @@ const model = {
                 address: "stavanger",
                 calories: 100,
                 favoriteBurgertype: "baconcheese",
-                profileimage:"borgirman.png",
+                profileimage:"users/borgirman.png",
                 ratedBurgers: [],
                 favoriteBurgers: [],
                 friendslist: [
                     {
-                        id: 2,
+                        id: 1,
                     },
                 ],
             },
             {
-                id: 2,
+                id: 1,
                 name: "Lotte",
                 email: "lotte@mail.com",
                 password: "bamse",
@@ -62,12 +62,12 @@ const model = {
                 address: "stavanger",
                 calories: 0,
                 favoriteBurgertype: "triple cheese",
-                profileimage: "lotte.png",
+                profileimage: "users/lotte.png",
                 ratedBurgers: [],
                 favoriteBurgers: [],
                 friendslist: [
                     {
-                        id: 1,
+                        id: 0,
                     }
                 ]
 
