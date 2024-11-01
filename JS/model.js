@@ -2,7 +2,7 @@ const model = {
     app: {
         loggedInUserID: 0,
         pages: ['mainPage', 'profilePage', 'burgerPage', 'loginPage'],
-        currentPage: 'loginPage',
+        currentPage: 'profilePage',
 
     },
 
@@ -46,7 +46,10 @@ const model = {
                 favoriteBurgertype: "baconcheese",
                 profileimage:"users/borgirman.png",
                 ratedBurgers: [],
-                favoriteBurgers: [],
+                favoriteBurgers: [
+                    {id:101},
+                    {id:103} 
+                ],
                 friendslist: [
                     {
                         id: 1,

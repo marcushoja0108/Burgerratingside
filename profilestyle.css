@@ -26,3 +26,48 @@
     font-size: x-large;
     color: rgb(253, 69, 69);
 }
+
+
+.profileContentContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+
+}
+
+.friendsActivityContainer{
+    display: flex;
+    
+}
+
+.favoritesContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 40vh;
+    border: solid beige;
+    border-radius: 30px;
+    padding: 1vh;
+    height: 45vh;
+    background-image: linear-gradient(rgb(80, 69, 52), black);
+}
+
+.favoritesWindow{
+    display: flex;
+    flex-direction: column;
+}
+
+.favoriteElement{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+.profileFavoriteImage{
+    max-width: 170px;
+    border-radius: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.profileFavoriteImage:hover{
+    border: solid red;
+}

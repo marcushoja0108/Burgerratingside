@@ -26,11 +26,11 @@
 
 <script>
     updateview()
-    function updateview(i){
+    function updateview(id){
         const page = model.app.currentPage;
         if(page === "mainPage")updateViewMain();
         else if(page === "profilePage")updateViewProfile();
-        else if(page === "burgerPage")updateViewBurger(i);
+        else if(page === "burgerPage")updateViewBurger(id);
         else if(page === "loginPage")updateViewLogin();
 
     }
